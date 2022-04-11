@@ -5,7 +5,7 @@ const macosVersion = require('macos-version');
 
 const binary = path.join(electronUtil.fixPathForAsarUnpack(__dirname), 'permissions');
 
-const isSupported = macosVersion.isGreaterThanOrEqualTo('10.14.4');
+const isSupported = macosVersion.isGreaterThanOrEqualTo('12.1.0');
 
 module.exports = ({ask = false} = {}) => {
 	if (!isSupported) {
